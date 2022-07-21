@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.2.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.12.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="CSCI 3171 - Network Computing Exercises - Network layer1. Cite two differences between a router and a switch. router is a layer-3 device which implemented network layers and below. But switch is a lay">
+<meta property="og:type" content="article">
+<meta property="og:title" content="network_reviewing">
+<meta property="og:url" content="http://example.com/2022/07/21/network-reviewing/index.html">
+<meta property="og:site_name" content="Project archives">
+<meta property="og:description" content="CSCI 3171 - Network Computing Exercises - Network layer1. Cite two differences between a router and a switch. router is a layer-3 device which implemented network layers and below. But switch is a lay">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/network-reviewing/images/804fab42fdcf7bf91bd1f83b82e7d08d0d81f7077e94424ac6fc5da2f14eb34c.png">
+<meta property="article:published_time" content="2022-07-21T20:21:48.000Z">
+<meta property="article:modified_time" content="2022-07-21T20:41:22.806Z">
+<meta property="article:author" content="Zesheng Jia">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/network-reviewing/images/804fab42fdcf7bf91bd1f83b82e7d08d0d81f7077e94424ac6fc5da2f14eb34c.png">
+
+
+<link rel="canonical" href="http://example.com/2022/07/21/network-reviewing/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2022/07/21/network-reviewing/","path":"2022/07/21/network-reviewing/","title":"network_reviewing"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>network_reviewing | Project archives</title>
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Project archives</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Exercises-Network-layer"><span class="nav-number">1.</span> <span class="nav-text">Exercises - Network layer</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Cite-two-differences-between-a-router-and-a-switch"><span class="nav-number">1.0.1.</span> <span class="nav-text">1. Cite two differences between a router and a switch.</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-The-network-layer-functionalities-can-be-divided-into-data-plane-and-control-plane-Cite-two-functions-of-the-data-plane-and-two-functions-of-the-control-plane"><span class="nav-number">1.0.2.</span> <span class="nav-text">2. The network layer functionalities can be divided into data plane and control plane. Cite two functions of the data plane and two functions of the control plane.</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-What-are-the-main-components-of-a-network-router-Which-of-these-components-are-implemented-in-the-data-plane-and-which-are-implemented-in-the-control-plane"><span class="nav-number">1.0.3.</span> <span class="nav-text">3. What are the main components of a network router? Which of these components are implemented in the data plane and which are implemented in the control plane?</span></a></li></ol></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Zesheng Jia</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/07/21/network-reviewing/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Zesheng Jia">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Project archives">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="network_reviewing | Project archives">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          network_reviewing
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2022-07-21 17:21:48 / Modified: 17:41:22" itemprop="dateCreated datePublished" datetime="2022-07-21T17:21:48-03:00">2022-07-21</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>CSCI 3171 - Network Computing</p>
+<h1 id="Exercises-Network-layer"><a href="#Exercises-Network-layer" class="headerlink" title="Exercises - Network layer"></a>Exercises - Network layer</h1><h3 id="1-Cite-two-differences-between-a-router-and-a-switch"><a href="#1-Cite-two-differences-between-a-router-and-a-switch" class="headerlink" title="1. Cite two differences between a router and a switch."></a>1. Cite two differences between a router and a switch.</h3><ol>
+<li>router is a layer-3 device which implemented network layers and below. But switch is a layer-2 device which only implements link layer and below.</li>
+<li>router forward packets by IP address but switch forward packets by MAC address.</li>
+</ol>
+<h3 id="2-The-network-layer-functionalities-can-be-divided-into-data-plane-and-control-plane-Cite-two-functions-of-the-data-plane-and-two-functions-of-the-control-plane"><a href="#2-The-network-layer-functionalities-can-be-divided-into-data-plane-and-control-plane-Cite-two-functions-of-the-data-plane-and-two-functions-of-the-control-plane" class="headerlink" title="2. The network layer functionalities can be divided into data plane and control plane. Cite two functions of the data plane and two functions of the control plane."></a>2. The network layer functionalities can be divided into data plane and control plane. Cite two functions of the data plane and two functions of the control plane.</h3><ol>
+<li>Data Plane:<ol>
+<li>Input port functions:using hearder field values, lookup output port using forwarding table in input port memory</li>
+<li>Switching fabrics: transfer packet from input link to appropriate output link.<blockquote>
+<p>Or The data plane enables data transfer to and from clients, handling multiple conversations through multiple protocols, and manages conversations with remote peers. Data plane traffic travels through routers, rather than to or from them.</p>
+</blockquote>
+</li>
+</ol>
+</li>
+<li>Control Plane:             <ol>
+<li>determines how datagram is routed among routers along end-end path from source host to destination host</li>
+<li>Create routing table and forwarding table</li>
+</ol>
+</li>
+</ol>
+<h3 id="3-What-are-the-main-components-of-a-network-router-Which-of-these-components-are-implemented-in-the-data-plane-and-which-are-implemented-in-the-control-plane"><a href="#3-What-are-the-main-components-of-a-network-router-Which-of-these-components-are-implemented-in-the-data-plane-and-which-are-implemented-in-the-control-plane" class="headerlink" title="3. What are the main components of a network router? Which of these components are implemented in the data plane and which are implemented in the control plane?"></a>3. What are the main components of a network router? Which of these components are implemented in the data plane and which are implemented in the control plane?</h3><ol>
+<li><p>Input ports, switching fabric, output ports and routing processor.<br>   <img src="/network-reviewing/images/804fab42fdcf7bf91bd1f83b82e7d08d0d81f7077e94424ac6fc5da2f14eb34c.png" alt="picture 1">  </p>
+</li>
+<li><p>Suppose that an arriving packet matches two or more entries in a router’s forwarding<br>table. How does the router decide which forwarding rule should be applied?</p>
+</li>
+<li><p>Compare bus based and interconnection network based switches. Cite at least one<br>advantage and one disadvantage for each of them.</p>
+</li>
+<li><p>Cite two policies for dropping packets when a buffer is full. Which one would you choose<br>in a scenario where the network traffic is predominantly from video and web browsing<br>applications? Why?</p>
+</li>
+<li><p>Give an example showing why a network operator might want one class of packets to be<br>given priority over another class of packets.</p>
+</li>
+<li><p>What is the difference between Round Robin (RR) and Weighted Fair Queueing (WFQ)<br>packet scheduling policies? Is there a case where RR and WFQ will behave exactly the<br>same?</p>
+</li>
+<li><p>Suppose Host A sends Host B a TCP segment encapsulated in an IP datagram. When<br>Host B receives the datagram, how does the network layer in Host B know it should pass the<br>segment to TCP rather than to UDP or some other upper-layer protocol?</p>
+</li>
+<li><p>When a large datagram is fragmented into multiple smaller datagrams at the network<br>layer, where are these smaller datagrams reassembled into a single larger datagram?<br>(a) the next router<br>(b) the last router in the path to the destination<br>(c) the receiver<br>(d) the packet is reassembled only at the transport layer on the receiver side</p>
+</li>
+<li><p>How many IP addresses does a router have?</p>
+</li>
+<li><p>What is meant by the term “route aggregation”? Why is it useful for a router to perform<br>route aggregation?</p>
+</li>
+<li><p>Cite four differences between IPv4 and IPv6. For two of these differences, explain what<br>was the main motivation behind them</p>
+</li>
+<li><p>What is “network neutrality”? Why is it important for Internet users?</p>
+</li>
+<li><p>Consider a router that interconnects three subnets: Subnet 1, Subnet 2, and Subnet 3.<br>Suppose all of the interfaces in each of these three subnets are required to have the prefix<br>223.1.17&#x2F;24. Also suppose Subnet 1 is required to support at least 50 interfaces, Subnet 2 is<br>to support at least 80 interfaces, and Subnet 3 is to support at least 10 interfaces. Provide<br>three network addresses that satisfy these constraints. OBS.: use CIDR notation.</p>
+</li>
+<li><p>Consider a subnet with prefix 128.119.40.128&#x2F;26. Give an example of one IP address<br>that can be assigned to this network.</p>
+</li>
+<li><p>Suppose an ISP owns the block of addresses of the form 128.119.44.64&#x2F;26. Suppose it<br>wants to create four subnets from this block, with each block having the same number of IP<br>addresses. What are the prefixes for the four subnets? OBS.: Give your answer using the<br>A.B.C.D&#x2F;X notation.</p>
+</li>
+<li><p>Cite one advantage and one disadvantage of a “per-router” vs logically centralized<br>control plane.</p>
+</li>
+<li><p>Compare and contrast link-state and distance-vector routing algorithms.</p>
+</li>
+<li><p>What is the count-to-infinity problem in distance vector routing? How does it affect<br>routing on the Internet?</p>
+</li>
+<li><p>Is it necessary that every autonomous system use the same intra-AS routing algorithm?<br>Why or why not?</p>
+</li>
+<li><p>What is meant by an “area” in OSPF routing? Why was the concept of “area” introduced?</p>
+</li>
+<li><p>Link-state routing algorithms are based on two phases: link cost flooding and path<br>calculation. One can configure these algorithms to flood link cost information periodically or<br>based on topology changes. Cite an advantage and a disadvantage from each of these<br>approaches.</p>
+</li>
+<li><p>Cite three criteria that a routing algorithm could use to determine the best paths in a<br>network.</p>
+</li>
+<li><p>What does it mean for the distance vector routing algorithm to be:<br>a) iterative<br>b) distributed<br>c) self-stopping</p>
+</li>
+<li><p>What are the three main criteria BGP uses to select a route to a given destination prefix?<br>In which order are these criteria used?</p>
+</li>
+</ol>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/07/17/Fire-Radative-Power-Prediction/" rel="prev" title="Fire Radative Power Prediction">
+                  <i class="fa fa-chevron-left"></i> Fire Radative Power Prediction
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Zesheng Jia</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
