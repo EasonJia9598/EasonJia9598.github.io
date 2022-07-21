@@ -198,7 +198,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2022-07-21 17:21:48 / Modified: 17:41:22" itemprop="dateCreated datePublished" datetime="2022-07-21T17:21:48-03:00">2022-07-21</time>
+      <time title="Created: 2022-07-21 17:21:48 / Modified: 19:33:51" itemprop="dateCreated datePublished" datetime="2022-07-21T17:21:48-03:00">2022-07-21</time>
     </span>
 
   
@@ -232,55 +232,106 @@
 </li>
 </ol>
 <h3 id="3-What-are-the-main-components-of-a-network-router-Which-of-these-components-are-implemented-in-the-data-plane-and-which-are-implemented-in-the-control-plane"><a href="#3-What-are-the-main-components-of-a-network-router-Which-of-these-components-are-implemented-in-the-data-plane-and-which-are-implemented-in-the-control-plane" class="headerlink" title="3. What are the main components of a network router? Which of these components are implemented in the data plane and which are implemented in the control plane?"></a>3. What are the main components of a network router? Which of these components are implemented in the data plane and which are implemented in the control plane?</h3><ol>
-<li><p>Input ports, switching fabric, output ports and routing processor.<br>   <img src="/network-reviewing/images/804fab42fdcf7bf91bd1f83b82e7d08d0d81f7077e94424ac6fc5da2f14eb34c.png" alt="picture 1">  </p>
+<li>Input ports, switching fabric, output ports and routing processor.</li>
+</ol>
+<p><img src="/2022/07/21/network-reviewing/2022-07-21-17-39-23.png"></p>
+<ol start="2">
+<li>Data Plane: Input ports, switching fabric, output ports</li>
+<li>Control Plane: routing Processor</li>
+</ol>
+<h3 id="4-Suppose-that-an-arriving-packet-matches-two-or-more-entries-in-a-router’s-forwarding-table-How-does-the-router-decide-which-forwarding-rule-should-be-applied"><a href="#4-Suppose-that-an-arriving-packet-matches-two-or-more-entries-in-a-router’s-forwarding-table-How-does-the-router-decide-which-forwarding-rule-should-be-applied" class="headerlink" title="4. Suppose that an arriving packet matches two or more entries in a router’s forwarding table. How does the router decide which forwarding rule should be applied?"></a>4. Suppose that an arriving packet matches two or more entries in a router’s forwarding table. How does the router decide which forwarding rule should be applied?</h3><ol>
+<li>It will use long-prefix matching:</li>
+<li>when looking for forwarding table entry for given destination address, use longest address prefix that matches deatination address.</li>
+<li>which is we find the rule that has most matches with the destination address range.</li>
+</ol>
+<h3 id="5-Compare-bus-based-and-interconnection-network-based-switches-Cite-at-least-one-advantage-and-one-disadvantage-for-each-of-them"><a href="#5-Compare-bus-based-and-interconnection-network-based-switches-Cite-at-least-one-advantage-and-one-disadvantage-for-each-of-them" class="headerlink" title="5. Compare bus based and interconnection network based switches. Cite at least one advantage and one disadvantage for each of them."></a>5. Compare bus based and interconnection network based switches. Cite at least one advantage and one disadvantage for each of them.</h3><ol>
+<li>Bus:<ol>
+<li>Ad: An input port transfers a packet directly to the output port over a shared bus without intervention by the routing processor. And one packet can use all bandwidth by itself.</li>
+<li>Dis: It only can send one packet at a time. Other packets must wait at input ports.</li>
+</ol>
 </li>
-<li><p>Suppose that an arriving packet matches two or more entries in a router’s forwarding<br>table. How does the router decide which forwarding rule should be applied?</p>
-</li>
-<li><p>Compare bus based and interconnection network based switches. Cite at least one<br>advantage and one disadvantage for each of them.</p>
-</li>
-<li><p>Cite two policies for dropping packets when a buffer is full. Which one would you choose<br>in a scenario where the network traffic is predominantly from video and web browsing<br>applications? Why?</p>
-</li>
-<li><p>Give an example showing why a network operator might want one class of packets to be<br>given priority over another class of packets.</p>
-</li>
-<li><p>What is the difference between Round Robin (RR) and Weighted Fair Queueing (WFQ)<br>packet scheduling policies? Is there a case where RR and WFQ will behave exactly the<br>same?</p>
-</li>
-<li><p>Suppose Host A sends Host B a TCP segment encapsulated in an IP datagram. When<br>Host B receives the datagram, how does the network layer in Host B know it should pass the<br>segment to TCP rather than to UDP or some other upper-layer protocol?</p>
-</li>
-<li><p>When a large datagram is fragmented into multiple smaller datagrams at the network<br>layer, where are these smaller datagrams reassembled into a single larger datagram?<br>(a) the next router<br>(b) the last router in the path to the destination<br>(c) the receiver<br>(d) the packet is reassembled only at the transport layer on the receiver side</p>
-</li>
-<li><p>How many IP addresses does a router have?</p>
-</li>
-<li><p>What is meant by the term “route aggregation”? Why is it useful for a router to perform<br>route aggregation?</p>
-</li>
-<li><p>Cite four differences between IPv4 and IPv6. For two of these differences, explain what<br>was the main motivation behind them</p>
-</li>
-<li><p>What is “network neutrality”? Why is it important for Internet users?</p>
-</li>
-<li><p>Consider a router that interconnects three subnets: Subnet 1, Subnet 2, and Subnet 3.<br>Suppose all of the interfaces in each of these three subnets are required to have the prefix<br>223.1.17&#x2F;24. Also suppose Subnet 1 is required to support at least 50 interfaces, Subnet 2 is<br>to support at least 80 interfaces, and Subnet 3 is to support at least 10 interfaces. Provide<br>three network addresses that satisfy these constraints. OBS.: use CIDR notation.</p>
-</li>
-<li><p>Consider a subnet with prefix 128.119.40.128&#x2F;26. Give an example of one IP address<br>that can be assigned to this network.</p>
-</li>
-<li><p>Suppose an ISP owns the block of addresses of the form 128.119.44.64&#x2F;26. Suppose it<br>wants to create four subnets from this block, with each block having the same number of IP<br>addresses. What are the prefixes for the four subnets? OBS.: Give your answer using the<br>A.B.C.D&#x2F;X notation.</p>
-</li>
-<li><p>Cite one advantage and one disadvantage of a “per-router” vs logically centralized<br>control plane.</p>
-</li>
-<li><p>Compare and contrast link-state and distance-vector routing algorithms.</p>
-</li>
-<li><p>What is the count-to-infinity problem in distance vector routing? How does it affect<br>routing on the Internet?</p>
-</li>
-<li><p>Is it necessary that every autonomous system use the same intra-AS routing algorithm?<br>Why or why not?</p>
-</li>
-<li><p>What is meant by an “area” in OSPF routing? Why was the concept of “area” introduced?</p>
-</li>
-<li><p>Link-state routing algorithms are based on two phases: link cost flooding and path<br>calculation. One can configure these algorithms to flood link cost information periodically or<br>based on topology changes. Cite an advantage and a disadvantage from each of these<br>approaches.</p>
-</li>
-<li><p>Cite three criteria that a routing algorithm could use to determine the best paths in a<br>network.</p>
-</li>
-<li><p>What does it mean for the distance vector routing algorithm to be:<br>a) iterative<br>b) distributed<br>c) self-stopping</p>
-</li>
-<li><p>What are the three main criteria BGP uses to select a route to a given destination prefix?<br>In which order are these criteria used?</p>
+<li>Interconnection:<ol>
+<li>Ad: It can send multiple packets during the same time.</li>
+<li>Dis: It still can be block by when two packets’ forwarding routes are crossed. But the bandwidth is lower since it needs to share the bandwidth with other routes.</li>
+</ol>
 </li>
 </ol>
+<h3 id="6-Cite-two-policies-for-dropping-packets-when-a-buffer-is-full-Which-one-would-you-choose-in-a-scenario-where-the-network-traffic-is-predominantly-from-video-and-web-browsing-applications-Why"><a href="#6-Cite-two-policies-for-dropping-packets-when-a-buffer-is-full-Which-one-would-you-choose-in-a-scenario-where-the-network-traffic-is-predominantly-from-video-and-web-browsing-applications-Why" class="headerlink" title="6. Cite two policies for dropping packets when a buffer is full. Which one would you choose in a scenario where the network traffic is predominantly from video and web browsing applications? Why?"></a>6. Cite two policies for dropping packets when a buffer is full. Which one would you choose in a scenario where the network traffic is predominantly from video and web browsing applications? Why?</h3><ol>
+<li>Two dropping packets policies:<ol>
+<li>Drop the arriving packet as drop-tail</li>
+<li>Remove one or more already-queued packets to make room for the newly arrived packet.</li>
+</ol>
+</li>
+<li>I would chose the policy that will drop tail packets. Since, if we mainly use web browsing, we don’t want to miss anything from our web page. It will confused us by the missing contents. And when we watch video instead of video streaming. We don’t miss anything either.</li>
+</ol>
+<h3 id="7-Give-an-example-showing-why-a-network-operator-might-want-one-class-of-packets-to-be-given-priority-over-another-class-of-packets"><a href="#7-Give-an-example-showing-why-a-network-operator-might-want-one-class-of-packets-to-be-given-priority-over-another-class-of-packets" class="headerlink" title="7. Give an example showing why a network operator might want one class of packets to be given priority over another class of packets."></a>7. Give an example showing why a network operator might want one class of packets to be given priority over another class of packets.</h3><blockquote>
+<ol>
+<li>In practice, a network operator may configure a queue so that packets carrying network management information (for example, as indicated by the source or destination TCP&#x2F;UDP port number) receive priority over user traffic</li>
+<li>additionally, real-time voice-over-IP packets might receive priority over non-real-time traffic such e-mail packets</li>
+</ol>
+</blockquote>
+<ol>
+<li>For example, they may want to set high-priority on packets that are carrying network management information.</li>
+<li>And set high-priority on real-time voice-over-IP packets than non-real time traffic such as e-mails.</li>
+</ol>
+<h3 id="8-What-is-the-difference-between-Round-Robin-RR-and-Weighted-Fair-Queueing-WFQ-packet-scheduling-policies-Is-there-a-case-where-RR-and-WFQ-will-behave-exactly-the-same"><a href="#8-What-is-the-difference-between-Round-Robin-RR-and-Weighted-Fair-Queueing-WFQ-packet-scheduling-policies-Is-there-a-case-where-RR-and-WFQ-will-behave-exactly-the-same" class="headerlink" title="8. What is the difference between Round Robin (RR) and Weighted Fair Queueing (WFQ) packet scheduling policies? Is there a case where RR and WFQ will behave exactly the same?"></a>8. What is the difference between Round Robin (RR) and Weighted Fair Queueing (WFQ) packet scheduling policies? Is there a case where RR and WFQ will behave exactly the same?</h3><ol>
+<li>Difference:<ol>
+<li>In round robin, each class has same chance to get out of the queue by cycling each class.</li>
+<li>But in weighted Fair queueing, each class has been assigned with a weight. And each class may receive a differential amount of service in any interval of time based on its weight.</li>
+</ol>
+</li>
+<li>Yes: when every class has the same weight.</li>
+</ol>
+<h3 id="9-Suppose-Host-A-sends-Host-B-a-TCP-segment-encapsulated-in-an-IP-datagram-When-Host-B-receives-the-datagram-how-does-the-network-layer-in-Host-B-know-it-should-pass-the-segment-to-TCP-rather-than-to-UDP-or-some-other-upper-layer-protocol"><a href="#9-Suppose-Host-A-sends-Host-B-a-TCP-segment-encapsulated-in-an-IP-datagram-When-Host-B-receives-the-datagram-how-does-the-network-layer-in-Host-B-know-it-should-pass-the-segment-to-TCP-rather-than-to-UDP-or-some-other-upper-layer-protocol" class="headerlink" title="9. Suppose Host A sends Host B a TCP segment encapsulated in an IP datagram. When Host B receives the datagram, how does the network layer in Host B know it should pass the segment to TCP rather than to UDP or some other upper-layer protocol?"></a>9. Suppose Host A sends Host B a TCP segment encapsulated in an IP datagram. When Host B receives the datagram, how does the network layer in Host B know it should pass the segment to TCP rather than to UDP or some other upper-layer protocol?</h3><ol>
+<li>In IP datagram header, there is one column called upper layer, it will show the upper layer protocol’s type. Such as TCP or UDP</li>
+</ol>
+<h3 id="10-When-a-large-datagram-is-fragmented-into-multiple-smaller-datagrams-at-the-network-layer-where-are-these-smaller-datagrams-reassembled-into-a-single-larger-datagram"><a href="#10-When-a-large-datagram-is-fragmented-into-multiple-smaller-datagrams-at-the-network-layer-where-are-these-smaller-datagrams-reassembled-into-a-single-larger-datagram" class="headerlink" title="10. When a large datagram is fragmented into multiple smaller datagrams at the network layer, where are these smaller datagrams reassembled into a single larger datagram?"></a>10. When a large datagram is fragmented into multiple smaller datagrams at the network layer, where are these smaller datagrams reassembled into a single larger datagram?</h3><p>(a) the next router</p>
+<p>(b) the last router in the path to the destination</p>
+<p>(c) the receiver</p>
+<p><em><strong>(d) the packet is reassembled only at the transport layer on the receiver side</strong></em></p>
+<blockquote>
+<p>These three fields have to do with so-called<br>IP fragmentation, when a large IP datagram is broken into several smaller IP datagrams<br>which are then forwarded independently to the destination, where they are<br>reassembled before their payload data (see below) is passed up to <em><strong>the transport layer<br>at the destination host.</strong></em> Interestingly, the new version of IP, IPv6, does not allow for<br>fragmentation. We’ll not cover fragmentation here; but readers can find a detailed<br>discussion online, among the “retired” material from earlier versions of this book.</p>
+</blockquote>
+<h3 id="11-How-many-IP-addresses-does-a-router-have"><a href="#11-How-many-IP-addresses-does-a-router-have" class="headerlink" title="11. How many IP addresses does a router have?"></a>11. How many IP addresses does a router have?</h3><ol>
+<li>It depends on how many interfaces that a router has. </li>
+<li>The number of IP address equals to the number of interfaces</li>
+</ol>
+<h3 id="12-What-is-meant-by-the-term-“route-aggregation”-Why-is-it-useful-for-a-router-to-perform-route-aggregation"><a href="#12-What-is-meant-by-the-term-“route-aggregation”-Why-is-it-useful-for-a-router-to-perform-route-aggregation" class="headerlink" title="12. What is meant by the term “route aggregation”? Why is it useful for a router to perform route aggregation?"></a>12. What is meant by the term “route aggregation”? Why is it useful for a router to perform route aggregation?</h3><blockquote>
+<ol>
+<li>This ability to use a single prefix to advertise multiple networks is often referred to as address aggregation (also route aggregation or route summarization).</li>
+<li>Route aggregation lets you take several specific routes and combine them into one inclusive route. Route aggregation can reduce the number of routes a given protocol advertises.</li>
+</ol>
+</blockquote>
+<ol>
+<li>It means that one main network can have multiple sub network inside of it. And the rest of world can access those sub networks by the main network IP prefix without knowing it has multiple sub networks.</li>
+<li>It allows efficient advertisement of routing information.</li>
+</ol>
+<h3 id="13-Cite-four-differences-between-IPv4-and-IPv6-For-two-of-these-differences-explain-what-was-the-main-motivation-behind-them"><a href="#13-Cite-four-differences-between-IPv4-and-IPv6-For-two-of-these-differences-explain-what-was-the-main-motivation-behind-them" class="headerlink" title="13. Cite four differences between IPv4 and IPv6. For two of these differences, explain what was the main motivation behind them"></a>13. Cite four differences between IPv4 and IPv6. For two of these differences, explain what was the main motivation behind them</h3><ol>
+<li><p>Difference:</p>
+<ol>
+<li>IPv4 is 32 bit IP address whereas IPv6 is 128 Bit address</li>
+<li>IPv4 has options like upper-layer, IPV6 has no options</li>
+<li>IPv4 has checksum, whereas IPv6 has no checksum</li>
+<li>IPv4 has fragmentation&#x2F;reassembly, IPv6 doesn’t have this.</li>
+</ol>
+</li>
+<li><p>Motivation:</p>
+<ol>
+<li>32 bit to 128 bit: 32 bit IPv4 address space would be completely allocated. IPv6 create more space through its larger size of bit.</li>
+<li>No checksum: To speed processing at routers</li>
+</ol>
+</li>
+</ol>
+<h3 id="14-What-is-“network-neutrality”-Why-is-it-important-for-Internet-users"><a href="#14-What-is-“network-neutrality”-Why-is-it-important-for-Internet-users" class="headerlink" title="14. What is “network neutrality”? Why is it important for Internet users?"></a>14. What is “network neutrality”? Why is it important for Internet users?</h3><h3 id="15-Consider-a-router-that-interconnects-three-subnets-Subnet-1-Subnet-2-and-Subnet-3"><a href="#15-Consider-a-router-that-interconnects-three-subnets-Subnet-1-Subnet-2-and-Subnet-3" class="headerlink" title="15. Consider a router that interconnects three subnets: Subnet 1, Subnet 2, and Subnet 3."></a>15. Consider a router that interconnects three subnets: Subnet 1, Subnet 2, and Subnet 3.</h3><p>Suppose all of the interfaces in each of these three subnets are required to have the prefix<br>223.1.17&#x2F;24. Also suppose Subnet 1 is required to support at least 50 interfaces, Subnet 2 is<br>to support at least 80 interfaces, and Subnet 3 is to support at least 10 interfaces. Provide<br>three network addresses that satisfy these constraints. OBS.: use CIDR notation.</p>
+<h3 id="16-Consider-a-subnet-with-prefix-128-119-40-128-x2F-26-Give-an-example-of-one-IP-address"><a href="#16-Consider-a-subnet-with-prefix-128-119-40-128-x2F-26-Give-an-example-of-one-IP-address" class="headerlink" title="16. Consider a subnet with prefix 128.119.40.128&#x2F;26. Give an example of one IP address"></a>16. Consider a subnet with prefix 128.119.40.128&#x2F;26. Give an example of one IP address</h3><p>that can be assigned to this network.</p>
+<h3 id="17-Suppose-an-ISP-owns-the-block-of-addresses-of-the-form-128-119-44-64-x2F-26-Suppose-it"><a href="#17-Suppose-an-ISP-owns-the-block-of-addresses-of-the-form-128-119-44-64-x2F-26-Suppose-it" class="headerlink" title="17. Suppose an ISP owns the block of addresses of the form 128.119.44.64&#x2F;26. Suppose it"></a>17. Suppose an ISP owns the block of addresses of the form 128.119.44.64&#x2F;26. Suppose it</h3><p>wants to create four subnets from this block, with each block having the same number of IP<br>addresses. What are the prefixes for the four subnets? OBS.: Give your answer using the<br>A.B.C.D&#x2F;X notation.</p>
+<h3 id="18-Cite-one-advantage-and-one-disadvantage-of-a-“per-router”-vs-logically-centralized"><a href="#18-Cite-one-advantage-and-one-disadvantage-of-a-“per-router”-vs-logically-centralized" class="headerlink" title="18. Cite one advantage and one disadvantage of a “per-router” vs logically centralized"></a>18. Cite one advantage and one disadvantage of a “per-router” vs logically centralized</h3><p>control plane.</p>
+<h3 id="19-Compare-and-contrast-link-state-and-distance-vector-routing-algorithms"><a href="#19-Compare-and-contrast-link-state-and-distance-vector-routing-algorithms" class="headerlink" title="19. Compare and contrast link-state and distance-vector routing algorithms."></a>19. Compare and contrast link-state and distance-vector routing algorithms.</h3><h3 id="20-What-is-the-count-to-infinity-problem-in-distance-vector-routing-How-does-it-affect"><a href="#20-What-is-the-count-to-infinity-problem-in-distance-vector-routing-How-does-it-affect" class="headerlink" title="20. What is the count-to-infinity problem in distance vector routing? How does it affect"></a>20. What is the count-to-infinity problem in distance vector routing? How does it affect</h3><p>routing on the Internet?</p>
+<h3 id="21-Is-it-necessary-that-every-autonomous-system-use-the-same-intra-AS-routing-algorithm"><a href="#21-Is-it-necessary-that-every-autonomous-system-use-the-same-intra-AS-routing-algorithm" class="headerlink" title="21. Is it necessary that every autonomous system use the same intra-AS routing algorithm?"></a>21. Is it necessary that every autonomous system use the same intra-AS routing algorithm?</h3><p>Why or why not?</p>
+<h3 id="22-What-is-meant-by-an-“area”-in-OSPF-routing-Why-was-the-concept-of-“area”-introduced"><a href="#22-What-is-meant-by-an-“area”-in-OSPF-routing-Why-was-the-concept-of-“area”-introduced" class="headerlink" title="22. What is meant by an “area” in OSPF routing? Why was the concept of “area” introduced?"></a>22. What is meant by an “area” in OSPF routing? Why was the concept of “area” introduced?</h3><h3 id="23-Link-state-routing-algorithms-are-based-on-two-phases-link-cost-flooding-and-path"><a href="#23-Link-state-routing-algorithms-are-based-on-two-phases-link-cost-flooding-and-path" class="headerlink" title="23. Link-state routing algorithms are based on two phases: link cost flooding and path"></a>23. Link-state routing algorithms are based on two phases: link cost flooding and path</h3><p>calculation. One can configure these algorithms to flood link cost information periodically or<br>based on topology changes. Cite an advantage and a disadvantage from each of these<br>approaches.</p>
+<h3 id="24-Cite-three-criteria-that-a-routing-algorithm-could-use-to-determine-the-best-paths-in-a"><a href="#24-Cite-three-criteria-that-a-routing-algorithm-could-use-to-determine-the-best-paths-in-a" class="headerlink" title="24. Cite three criteria that a routing algorithm could use to determine the best paths in a"></a>24. Cite three criteria that a routing algorithm could use to determine the best paths in a</h3><p>network.</p>
+<h3 id="25-What-does-it-mean-for-the-distance-vector-routing-algorithm-to-be"><a href="#25-What-does-it-mean-for-the-distance-vector-routing-algorithm-to-be" class="headerlink" title="25. What does it mean for the distance vector routing algorithm to be:"></a>25. What does it mean for the distance vector routing algorithm to be:</h3><p>a) iterative<br>b) distributed<br>c) self-stopping</p>
+<h3 id="26-What-are-the-three-main-criteria-BGP-uses-to-select-a-route-to-a-given-destination-prefix"><a href="#26-What-are-the-three-main-criteria-BGP-uses-to-select-a-route-to-a-given-destination-prefix" class="headerlink" title="26. What are the three main criteria BGP uses to select a route to a given destination prefix?"></a>26. What are the three main criteria BGP uses to select a route to a given destination prefix?</h3><p>In which order are these criteria used?</p>
 
       
     </div>
